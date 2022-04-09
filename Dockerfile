@@ -8,4 +8,5 @@ RUN apk add --virtual my_build_tools gcc musl-dev libffi-dev && \
     apk del my_build_tools
 USER myuser
 COPY --chown=myuser:myuser ./*.py .
+ENV PYTHONUNBUFFERED=1
 CMD ["sh", "-c", "python accept_invitations.py --help"]
