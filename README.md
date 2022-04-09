@@ -2,11 +2,10 @@
 
 ## Description
 
-A small python program, that can connect to github, and accept all pending invitations, grantad, if it's not expired.
+A small python program, that can connect to github, and accept all pending invitations, granted, if they aren't expired.
 In order to connect to github, it needs a token (https://github.com/settings/tokens) with **'Access repository invitations'** right enabled.
 
 ## Running locally
-
 
 ### Setup
 Python version used: `3.10` (activate venv, if necessary)
