@@ -9,7 +9,7 @@ In order to connect to github, it needs a token (https://github.com/settings/tok
 
 
 ### Setup
-Python version used: `3.10` (activate venv, if necessaty)
+Python version used: `3.10` (activate venv, if necessary)
 
 `pip install PyGithub`
 
@@ -24,7 +24,7 @@ Python version used: `3.10` (activate venv, if necessaty)
 
 ### Or pull image from docker hub
 
-docker pull adamsan/accept_invites:latest
+`docker pull adamsan/accept_invites:latest`
 
 ### Running 
 
