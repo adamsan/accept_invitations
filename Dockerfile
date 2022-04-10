@@ -1,10 +1,9 @@
 FROM python:3.10.4-alpine
 RUN adduser -D myuser
 WORKDIR /home/myuser
-RUN apk upgrade --no-cache
 RUN apk add --no-cache --virtual my_build_tools gcc musl-dev libffi-dev && \
-    pip install --upgrade pip && \
-    pip install PyGithub && \
+    pip install --no-cache-dir --upgrade pip==22.0.4 && \
+    pip install --no-cache-dir PyGithub==1.55 && \
     apk del my_build_tools
 USER myuser
 COPY --chown=myuser:myuser ./*.py .
