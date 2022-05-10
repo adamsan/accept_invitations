@@ -28,3 +28,7 @@ Python version used: `3.10` (activate venv, if necessary)
 ### Running 
 
 `docker run --rm --name test_py -it accept_invites python accept_invitations.py --token <generated token>`
+
+Or Put in a bat file:
+docker pull adamsan/accept_invites:latest
+docker run --rm --name accept_invites -it adamsan/accept_invites python accept_invitations.py --token <generated token>
